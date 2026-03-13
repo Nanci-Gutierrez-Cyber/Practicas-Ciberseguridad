@@ -1,0 +1,7 @@
+2026-03-12 10:00:01 INFO: Session opened for user admin from 192.168.1.10 
+2026-03-12 10:05:22 ERROR: Failed password for root from 10.0.0.5 port 22 ssh2
+2026-03-12 10:05:25 ERROR: Failed password for root from 10.0.0.5 port 22 ssh2
+2026-03-12 10:05:28 ERROR: Failed password for root from 10.0.0.5 port 22 ssh2
+2026-03-12 10:10:45 INFO: Session opened for user nanci from 192.168.1.15
+2026-03-12 10:15:10 WARN: Possible brute force attack detected from 10.0.0.5
+2026-03-12 10:20:00 ERROR: Connection refused from 172.16.0.25

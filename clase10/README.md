@@ -1,17 +1,22 @@
 
 
-# Clase 10: Automatización mediante Scripts (Bash)
 
-En esta práctica me inicié en la creación de **scripts de automatización**, una habilidad esencial en ciberseguridad para optimizar tareas de auditoría y respuesta ante incidentes.
+# Clase 10: Automatización y Lógica de Scripts (Bash)
 
-### 🔍 Conceptos y Comandos Aprendidos:
+En este módulo avancé desde la ejecución lineal de comandos hasta la creación de herramientas con lógica condicional.
 
-* **Shebang (`#! /bin/bash`):** Definición del intérprete de comandos para asegurar la portabilidad del script.
-* **Permisos de Ejecución (`chmod +x`):** Gestión de privilegios de archivos para permitir que un archivo de texto funcione como un programa ejecutable.
-* **Variables de Entorno y Sistema:** Uso de `whoami` y `uptime` para obtener contextos de ejecución y estado del servidor.
-* **Tuberías y Filtrado (Pipes):** Implementación de `df -h | grep` para procesar y limpiar la salida de datos complejos en un formato legible.
+### 🔍 Práctica I: Auditoría Básica
+* **Archivo:** `mi_auditoria.sh`
+* **Concepto:** Automatización de recolección de datos del sistema (`whoami`, `uptime`, `df`).
 
-### 📂 Archivo Creado:
-* `mi_auditoria.sh`: Un script que genera un reporte instantáneo del usuario activo, tiempo de encendido y estado del almacenamiento.
+### 🛡️ Práctica II: Script "Centinela" (Lógica Condicional)
+* **Archivo:** `centinela.sh`
+* **Habilidad Crítica:** Implementación de estructuras `if-else` para la toma de decisiones.
+* **Adaptabilidad:** Tras realizar un reconocimiento de archivos en `/var/log`, se ajustó el script para auditar `alternatives.log`, demostrando capacidad de respuesta ante diferentes entornos de Linux.
 
-> **Valor Profesional:** La capacidad de crear scripts permite reducir errores humanos y acelerar la recolección de evidencias durante una fase de reconocimiento o auditoría.
+### 🧠 Lo que aprendí:
+1.  **Variables:** Almacenamiento de rutas para crear código mantenible.
+2.  **Validación de Archivos:** Uso de `[ -f "$ARCHIVO" ]` para evitar errores de ejecución si un recurso no existe.
+3.  **Filtrado de Eventos:** Uso de `grep -c` para cuantificar incidentes o cambios en el sistema de manera automática.
+
+
